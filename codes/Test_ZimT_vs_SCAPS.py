@@ -117,7 +117,7 @@ def JV_scan(str2run=[''],Gens=[0],num_fig=0,path2ZimT='',Store_folder='',hasTL=T
                     tVG_lst.append('tVG_JV_scan_{:.2e}_G_{:.2e}_{}.txt'.format(scan,Gen,idx))
                     tj_lst.append('tj_JV_scan_{:.2e}_G_{:.2e}_{}.dat'.format(scan,Gen,idx))
 
-
+        # print(str_lst)
         # Run ZimT
         p = multiprocessing.Pool(max_jobs)
         results = parmap.starmap(run_zimt,list(zip(str_lst,sys_lst,path_lst)), pm_pool=p, pm_processes=max_jobs,pm_pbar=True)
@@ -192,15 +192,15 @@ if __name__ == '__main__':
 
     curr_dir = os.getcwd()  # Current working directory
     slash = '/'
-    path2ZimT = 'Simulation_program/DDSuite_v405/ZimT'+slash    # Path to SIMsalabim in curr_dir
+    path2ZimT = 'Simulation_program/DDSuite_v418/ZimT'+slash    # Path to SIMsalabim in curr_dir
     ext_save_pic = '.jpg'
 
 
     ## Simulation types ##
-    MIM_configuration = False
+    MIM_configuration = True
     Pin_nip_configuration = False
     Traps_configuration = False
-    Interface_traps_configuration = True
+    Interface_traps_configuration = False
 
 
     ## First setup for MIM ##

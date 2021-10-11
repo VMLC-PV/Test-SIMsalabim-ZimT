@@ -50,15 +50,15 @@ fig_idx = 0
 
 # Inputs
 curr_dir = os.getcwd()                      # Current working directory
-path2SIMsalabim = 'Simulation_program/DDSuite_v418v2/SIMsalabim'+slash    # Path to SIMsalabim in curr_dir
-path2ZimT = 'Simulation_program/DDSuite_v418v2/ZimT'+slash                      # Path to ZimT in curr_dir
+path2SIMsalabim = 'Simulation_program/DDSuite_v418/SIMsalabim'+slash    # Path to SIMsalabim in curr_dir
+path2ZimT = 'Simulation_program/DDSuite_v418/ZimT'+slash                      # Path to ZimT in curr_dir
 ext_save_pic = '.jpg'
 
 # Chose test to run:
-Test_gen_profile = 0
-Test_SCLC_MottGurney = 0
-Test_SCLC_Traps = 0
-Test_TPV = 0
+Test_gen_profile = True
+Test_SCLC_MottGurney = True
+Test_SCLC_Traps = True
+Test_TPV = True
 Test_TPC = True
 Test_RCtime = True
 Test_Impedance = True
