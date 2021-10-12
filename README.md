@@ -1,7 +1,7 @@
 # Test-SIMsalabim-ZimT
 
 ## Author
-Vincent M. Le Corre (Main)\
+Vincent M. Le Corre (Main)
 
 ## Description
 All these codes are written to be used with the open-source drift-diffusion suit written by Prof. L. Jan Anton Koster from University of Groningen. (See [GitHub repository](https://github.com/kostergroup)) They can be used to run the simulation, plot and do analysis of the output from the simulations for both steady-state with [SIMsalabim](https://github.com/kostergroup/SIMsalabim) and transient with [ZimT](https://github.com/kostergroup/SIMsalabim).\
